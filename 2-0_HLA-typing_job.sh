@@ -26,7 +26,7 @@ for stage in ${STAGES[@]}; do
             -J ${sample}_HLA -n 8 -M 128GB -o ${sample}_HLA.out \
 	        -e ${sample}_HLA.err -R 'select[mem>128MB] rusage[mem=128GB] span[hosts=1]' \
             -a "docker(kalisaz/arcashla:latest)" /bin/bash -c \
-            "./arcasHLA.sh $WD $sample $BAM $OUTDIR"
+            "./2-1_arcasHLA.sh $WD $sample $BAM $OUTDIR"
     done
     
 done

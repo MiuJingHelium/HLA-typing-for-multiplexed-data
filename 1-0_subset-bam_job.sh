@@ -16,6 +16,6 @@ for sample in ${SAMPLES[@]}; do
         -J ${sample}_subset -n 8 -M 128GB -o ${sample}_subset.out \
 	-e ${sample}_subset.err -R 'select[mem>128MB] rusage[mem=128GB] span[hosts=1]' \
         -a "docker(ubuntu:22.04)" /bin/bash -c \
-        "./subset-bam.sh $WD $INDIR $sample"
+        "./1-1_subset-bam.sh $WD $INDIR $sample"
     
 done
