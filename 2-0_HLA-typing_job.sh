@@ -8,7 +8,8 @@ STORAGE_LOC=/storage1/fs1/martyomov/Active/collaborations/carisa/Campisi/ALS_hum
 export LSF_DOCKER_VOLUMES="/storage1/fs1/martyomov/Active/:/storage1/fs1/martyomov/Active/  /scratch1/fs1/martyomov:/scratch1/fs1/martyomov /home/carisa:/home/carisa" 
 mkdir -p ./tmp/
 
-git clone https://github.com/RabadanLab/arcasHLA
+# git clone https://github.com/RabadanLab/arcasHLA
+# Try running the git clone step outside of the tasks
 
 STAGES=("E1" "M1" "L1") # 
 

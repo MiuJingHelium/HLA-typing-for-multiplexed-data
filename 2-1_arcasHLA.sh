@@ -9,8 +9,11 @@ source activate arcas-hla
 chmod +rw ./arcasHLA/
 chmod +x ./arcasHLA/arcasHLA
 
+######## To-be optimized ###########
 # step 0: update reference
-./arcasHLA/arcasHLA reference --version 3.34.0
+# ./arcasHLA/arcasHLA reference --version 3.34.0
+# Before optimization of workflow, the reference update needs to be run 
+# outside of the tasks.
 
 # step 1: extract chr6; input bam and produce fastq files
 mkdir -p ./tmp/$SAMPLE
